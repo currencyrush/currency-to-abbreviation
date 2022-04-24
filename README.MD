@@ -2,7 +2,7 @@
 # currency-to-abbreviation
 currency-to-abbreviation is a simple package for converting numbers to currency abbreviations. Example: 1000000 -> $1M
 
-## Example
+## Examples
 
 
 ## CurrencyToAbbreviation Parameters
