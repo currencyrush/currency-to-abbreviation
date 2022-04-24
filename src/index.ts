@@ -18,7 +18,7 @@ const CurrencyToAbbreviation = ({
   inputLocale = validateInputLocale(inputLocale);
   inputCurrencyCode = inputCurrencyCode ? inputCurrencyCode : 'USD';
 
-  let currencySymbol = getCurrencySymbol(inputLocale, inputCurrencyCode);
+  const currencySymbol = getCurrencySymbol(inputLocale, inputCurrencyCode);
 
   if (typeof inputNumber !== 'number') {
     throw Error(`The "inputNumber" parameter passed to CurrencyToAbbreviation must be of type "number"`);

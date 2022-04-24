@@ -1,6 +1,6 @@
 const validateInputLocale = (inputLocale?: string) => {
   try {
-    let region = new Intl.DateTimeFormat(inputLocale);
+    const region = new Intl.DateTimeFormat(inputLocale);
 
     if (region.resolvedOptions().locale) {
       return region.resolvedOptions().locale;
