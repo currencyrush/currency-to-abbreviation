@@ -31,8 +31,8 @@
     "abbreviate",
     "abbreviation"
   ],
-  "author": "CurrencyRush",
-  "license": "ISC",
+  "author": "currencyrush",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/currencyrush/currency-to-abbreviation/issues"
   },
