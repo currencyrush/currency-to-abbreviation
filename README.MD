@@ -3,7 +3,12 @@
 currency-to-abbreviation is a simple package for converting numbers to currency abbreviations. Example: 1000000 -> $1M
 
 ## Examples
+```
+import { CurrencyToAbbreviation } from "currency-to-abbreviation"
 
+console.log(CurrencyToAbbreviation({ inputNumber: 115131874 })) // Output: $115.1M
+
+```
 
 ## CurrencyToAbbreviation Parameters
 
