@@ -1,4 +1,4 @@
-import CurrencyToAbbreviation from '../index';
+import { CurrencyToAbbreviation } from '../index';
 
 test('CurrencyToAbbreviation Test', () => {
   // under 0 tests

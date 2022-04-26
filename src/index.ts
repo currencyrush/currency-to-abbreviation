@@ -2,7 +2,7 @@ import { CurrencyCodeType } from './types/CurrencyCodeType';
 import getCurrencySymbol from './helpers/getCurrencySymbol';
 import validateInputLocale from './helpers/validateInputLocale';
 
-const CurrencyToAbbreviation = ({
+export const CurrencyToAbbreviation = ({
   inputNumber,
   inputLocale,
   inputCurrencyCode,
@@ -88,4 +88,3 @@ const CurrencyToAbbreviation = ({
     );
   }
 };
-export default CurrencyToAbbreviation;
