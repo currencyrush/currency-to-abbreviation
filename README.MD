@@ -2,6 +2,10 @@
 # currency-to-abbreviation
 currency-to-abbreviation is a simple package for converting numbers to currency abbreviations. Example: 1000000 -> $1M
 
+```
+npm i currency-to-abbreviation
+```
+
 ## Examples
 ```javascript
 import { CurrencyToAbbreviation } from "currency-to-abbreviation"
