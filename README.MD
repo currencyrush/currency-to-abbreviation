@@ -5,9 +5,12 @@ currency-to-abbreviation is a simple package for converting numbers to currency 
 ## Examples
 ```javascript
 import { CurrencyToAbbreviation } from "currency-to-abbreviation"
+//Basic Example
+CurrencyToAbbreviation({ inputNumber: 115131874 }) // Output: $115.1M
 
-console.log(CurrencyToAbbreviation({ inputNumber: 115131874 })) // Output: $115.1M
-
+// <1
+CurrencyToAbbreviation({ inputNumber: 0.8987456 }) // Output: $0.90
+CurrencyToAbbreviation({ inputNumber: 0.8987456, inputLocale:'de-DE', inputCurrencyCode:'EUR', decimalPlacesToRound:4 }) // Output: €0,8987
 ```
 
 ## CurrencyToAbbreviation Parameters
