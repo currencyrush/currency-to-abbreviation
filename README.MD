@@ -11,6 +11,32 @@ CurrencyToAbbreviation({ inputNumber: 115131874 }) // Output: $115.1M
 // <1
 CurrencyToAbbreviation({ inputNumber: 0.8987456 }) // Output: $0.90
 CurrencyToAbbreviation({ inputNumber: 0.8987456, inputLocale:'de-DE', inputCurrencyCode:'EUR', decimalPlacesToRound:4 }) // Output: €0,8987
+
+// >=1 && <100
+CurrencyToAbbreviation({ inputNumber: 95.53 }) // Output: $95.53
+CurrencyToAbbreviation({ inputNumber: 95.59, inputCurrencyCode:'JPY', dcimalPlacesToRound: 0 }) //Output: ￥96
+
+// >=100 && <1,000
+CurrencyToAbbreviation({ inputNumber: 255.59 }) // Output: $256
+CurrencyToAbbreviation({ inputNumber: 255.59, inputLocale:'es-ES', inputCurrencyCode:'EUR', decimalPlacesToRound:0 }) //Output: €255,59
+
+// >=1,000 && <1,000,000 (Thousands)
+CurrencyToAbbreviation({ inputNumber: 3535.564 }) //Output: $3.5K
+CurrencyToAbbreviation({ inputNumber: 3535.564, inputCurrencyCode:'CAD', decimalPlacesToRound: 3, lowerCaseAbbreviation: true }) //Output: CA$3.536k
+
+// >=1,000,000 && <1,000,000,000 (Millions)
+CurrencyToAbbreviation({ inputNumber: 98432654.56 }) //Output: $98.4M
+CurrencyToAbbreviation({inputNumber: 3537565.564, inputLocale: "es-ES", inputCurrencyCode: "EUR", decimalPlacesToRound: 2, lowerCaseAbbreviation: true}) //Output: €3,54m
+
+// >=1,000,000,000 && <1,000,000,000,000 (Billions)
+CurrencyToAbbreviation({ inputNumber: 3153756565 }) //Output: $3.2B
+CurrencyToAbbreviation({inputNumber: 3153756565, inputLocale: "en-US", inputCurrencyCode: "EUR", decimalPlacesToRound: 3, lowerCaseAbbreviation: true}) //Output: €3.154b
+
+// >=1,000,000,000,000 (Tillions)
+CurrencyToAbbreviation({ inputNumber: 482658526862325 }) //Output: $482.7T
+CurrencyToAbbreviation({inputNumber: 482658526862325, inputLocale: "en-US", inputCurrencyCode: "JPY", decimalPlacesToRound: 0, lowerCaseAbbreviation: true}) //Output: ¥483t
+
+
 ```
 
 ## CurrencyToAbbreviation Parameters
