@@ -1,7 +1,12 @@
 import { CurrencyCodeType } from './types/CurrencyCodeType';
 import getCurrencySymbol from './helpers/getCurrencySymbol';
 import validateInputLocale from './helpers/validateInputLocale';
-
+/**
+ *  Convert numbers to abbreviated currency values. Example: 1000000 -> $1M
+ * @example CurrencyToAbbreviation({  inputNumber: 1364000, inputLocale: 'en-US', inputCurrencyCode: 'USD', decimalPlacesToRound: 2,
+lowerCaseAbbreviation: true}) // returns '$1.36m'
+ * @returns
+ */
 export const CurrencyToAbbreviation = ({
   inputNumber,
   inputLocale,
